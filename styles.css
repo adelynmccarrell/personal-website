@@ -68,3 +68,44 @@
     height: 150px;
   }
 }
+
+/* Final homepage layout adjustment */
+.hero.hero-split {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-split .hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-split .hero-image {
+  flex: 0 0 220px;
+}
+
+.hero-split .profile-photo {
+  width: 220px;
+  height: 220px;
+}
+
+@media (max-width: 768px) {
+  .hero.hero-split {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .hero-split .hero-image {
+    flex: none;
+  }
+
+  .hero-split .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
