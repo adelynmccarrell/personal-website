@@ -259,3 +259,156 @@
     padding-top: 3rem;
   }
 }
+
+/* EXPERIENCE PAGE */
+
+.experience-intro {
+  padding: 4rem 0 5rem;
+  max-width: 900px;
+}
+
+.experience-intro h1 {
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  margin: 20px 0 30px;
+}
+
+.experience-section {
+  margin: 2rem 0 6rem;
+}
+
+.experience-section h2 {
+  margin-bottom: 3.5rem;
+}
+
+/* Vertical timeline */
+
+.experience-timeline {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  padding-left: 45px;
+  border-left: 2px solid #d8c9bc;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 65px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -54px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #b27c58;
+  border: 3px solid #faf7f1;
+  box-shadow: 0 0 0 2px #b27c58;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #865a3d;
+  margin-bottom: 16px;
+}
+
+.timeline-content {
+  background: #ffffff;
+  border: 1px solid #dedbd5;
+  border-radius: 10px;
+  padding: 35px 40px;
+  box-shadow: 0 6px 22px rgba(23, 43, 69, 0.04);
+}
+
+.timeline-content h3 {
+  font-size: 2rem;
+  margin: 10px 0 5px;
+}
+
+.timeline-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #566477;
+  margin: 0 0 20px;
+}
+
+.timeline-content p {
+  margin-bottom: 20px;
+}
+
+.timeline-content ul {
+  padding-left: 22px;
+  margin-bottom: 25px;
+}
+
+.timeline-content li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+/* Skill tags */
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.experience-tags span {
+  background: #f4eee7;
+  color: #865a3d;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 6px 13px;
+  border-radius: 20px;
+}
+
+/* Closing section */
+
+.experience-closing {
+  border-top: 1px solid #dedbd5;
+  padding: 4rem 0;
+  max-width: 800px;
+}
+
+.experience-closing h2 {
+  margin: 15px 0 20px;
+}
+
+.experience-closing p:not(.eyebrow) {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+  .experience-intro {
+    padding: 2rem 0 3rem;
+  }
+
+  .experience-timeline {
+    padding-left: 25px;
+  }
+
+  .timeline-dot {
+    left: -34px;
+  }
+
+  .timeline-content {
+    padding: 25px 20px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+  }
+}
