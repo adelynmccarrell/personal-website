@@ -20,3 +20,51 @@
     height: 115px;
   }
 }
+
+
+/* Homepage split layout */
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-image {
+  flex: 0 0 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image .profile-photo {
+  width: 260px;
+  height: 260px;
+  margin: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .hero-image {
+    flex: none;
+  }
+
+  .hero-image .profile-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
